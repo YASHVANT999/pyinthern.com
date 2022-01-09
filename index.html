@@ -7,6 +7,7 @@
     
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body>
 <nav class="navbar">
@@ -25,7 +26,7 @@
         <li class="link"><a href="#contacts">contacts</a></li></div>
     </ul>
 <!--singup button-->
-    <button class="sign" onclick="openForm()">signup/login</button>
+    <a href="logi/index.html"><button class="sign">signup/login</button></a>
     <!--login form-->
     <div class="form-popup" id="myForm">
         <form action="index.html" class="form-container">
@@ -37,7 +38,10 @@
           <input type="password" placeholder="Enter Password" name="psw" required>
           <center><p style="margin-bottom: 5px;">Forgot your password?</p></center>
       
-          <button type="submit" class="btn">Login</button>
+          <button type="submit" class="btn" class="g-recaptcha" 
+          data-sitekey="6Lc55_gdAAAAAGwZBv0kSnnteC5ns8jirmt6qyPn" 
+          data-callback='onSubmit' 
+          data-action='submit'>Login</button>
           <button type="submit" class="btn" onclick="signup()">Signup</button>
           <button type="button" class="btn cancel" onclick="loginclose()">Close</button>
         </form>
@@ -56,6 +60,7 @@
             <button type="submit" class="btn">Signup</button>
           <button type="button" class="btn cancel" onclick="signupclose()">Close</button>
         </form></div>
+        
 </nav>
 <!--home page-->
 <section id=home class="home-section home_container active">
@@ -178,6 +183,8 @@
     <p class="about-info">Pyintern was founded in 2021 with a mision to create skilled Software Engineer for our country and world. At Pyintern, we strive to increase student intrest by providing hands on practical training in every concept taught in the classroom.<br><br>Founder : Mohd Amir<br>Mail : amir@gmail.com<br>Phone : 8090888647<br>Developer & Designer : Yashwant Gupta<br>Mail : mlp.yashvantgupta@gmail.com</p></div>
     
 </section>
+
+
 <script src="app.js"></script>
 <!--aos script-->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
