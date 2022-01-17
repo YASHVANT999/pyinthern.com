@@ -39,10 +39,10 @@
   
         <div id="login-form">
           <form>
-            <input type="email" name="email" placeholder="Enter email" />
-            <input type="password" placeholder="Enter password" />
+            <input type="email" name="email" placeholder="Enter email" required/>
+            <input type="password" placeholder="Enter password" required />
             <input type="text" style="width: 42%;" id="capt" readonly>
-            <input type="text" style="width: 42%;" placeholder="Enter captcha" id="textinput">
+            <input type="text" style="width: 42%;" placeholder="Enter captcha" id="textinput" required>
             <img src="img/capimg1.png" style="height: 2%; width: 10%;" onclick="cap()">
             <button type="button" class="btn login" style="margin-top:2rem" onclick="validcap()">login</button>
             <p><a href="javascript:void(0)">Forgotten account</a></p>
@@ -52,11 +52,11 @@
   
         <div id="signup-form">
           <form>
-            <input type="text" name="name" placeholder="Choose username" />
-            <input type="email" name="name" placeholder="Enter your email" />
-            <input type="password" placeholder="Create password" />
-            <input type="text" style="width: 42%;" id="capt" placeholder="6jdA!&" readonly>
-            <input type="text" style="width: 42%;" placeholder="Enter captcha">
+            <input type="text" name="name" placeholder="Choose username" required/>
+            <input type="email" name="name" placeholder="Enter your email" required/>
+            <input type="password" placeholder="Create password" required/>
+            <input type="text" style="width: 42%;" id="signup_capt" readonly>
+            <input type="text" style="width: 42%;" placeholder="Enter captcha" required>
             <img src="img/capimg1.png" style="height: 2%; width: 10%;" onclick="cap()">
             <button type="button" class="btn signup">create account</button>
             <p>
