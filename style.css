@@ -12,6 +12,7 @@ body {
   min-height: 100vh;
   background: #191919;
   font-family: sans-serif;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -687,37 +688,4 @@ body {
   color: #fff;
   font-size: 20px;
   opacity: 0.8;
-}
-
-/*media quary*/
-@media screen and (min-device-width: 481px) and (max-device-width: 1181px) {
-  .home-section {
-    display: block;
-  }
-  .home_right {
-    width: 100%;
-    padding: 7%;
-    height: auto;
-  }
-
-  .project-container {
-    display: block;
-  }
-
-  .project-card {
-    margin-top: 50px;
-    height: 40%;
-  }
-
-  .contact-section {
-    display: block;
-    width: 100%;
-  }
-
-  .about-section {
-    margin-top: 3em;
-  }
-  .about-info {
-    margin-top: 1em;
-  }
 }
