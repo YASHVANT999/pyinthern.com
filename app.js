@@ -125,3 +125,63 @@ function validcap() {
     return false;
   }
 }
+
+// cart-section
+function open_cart() {
+  document.querySelector(".cart-section").style.display = "block";
+}
+
+document.getElementById("cart-close").addEventListener("click", function () {
+  document.querySelector(".cart-section").style.display = "none";
+});
+
+function removeall() {
+  document.querySelector("#item1").style.display = "none";
+  document.querySelector("#item2").style.display = "none";
+  document.querySelector(".whole-checkout").style.display = "none";
+  document.querySelector(".Action").style.display = "none";
+  document.querySelector(".empty-cart").style.display = "block";
+  document.querySelector(".new-item").style.display = "none";
+  document.querySelector(".cart1").innerHTML = "Add to cart";
+  document.querySelector(".cart2").innerHTML = "Add to cart";
+}
+
+function add_to_cart_1() {
+  document.querySelector(".new-item").style.display = "block";
+  document.querySelector(".empty-cart").style.display = "none";
+  document.querySelector(".Action").style.display = "block";
+  document.querySelector("#item1").style.display = "flex";
+  document.querySelector("#item2").style.display = "none";
+  document.querySelector(".whole-checkout").style.display = "block";
+  document.querySelector(".cart1").innerHTML = "Go to cart";
+  document.querySelector(".cart2").innerHTML = "Add to cart";
+}
+
+function add_to_cart_2() {
+  document.querySelector(".new-item").style.display = "block";
+  document.querySelector(".empty-cart").style.display = "none";
+  document.querySelector(".Action").style.display = "block";
+  document.querySelector("#item2").style.display = "flex";
+  document.querySelector("#item1").style.display = "none";
+  document.querySelector(".whole-checkout").style.display = "block";
+  document.querySelector(".cart2").innerHTML = "Go to cart";
+  document.querySelector(".cart1").innerHTML = "Add to cart";
+}
+
+function remove_1() {
+  document.querySelector(".new-item").style.display = "none";
+  document.querySelector("#item1").style.display = "none";
+  document.querySelector(".cart1").innerHTML = "Add to cart";
+  document.querySelector(".whole-checkout").style.display = "none";
+  document.querySelector(".Action").style.display = "none";
+  document.querySelector(".empty-cart").style.display = "block";
+}
+
+function remove_2() {
+  document.querySelector(".new-item").style.display = "none";
+  document.querySelector("#item2").style.display = "none";
+  document.querySelector(".cart2").innerHTML = "Add to cart";
+  document.querySelector(".whole-checkout").style.display = "none";
+  document.querySelector(".Action").style.display = "none";
+  document.querySelector(".empty-cart").style.display = "block";
+}
