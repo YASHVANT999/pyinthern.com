@@ -61,9 +61,19 @@ body {
   min-width: 250px;
   border: solid lightcoral;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  opacity: 0.9;
   border-radius: 5px;
   z-index: 1;
+}
+
+.dropdown .dropdown-content::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 40px;
+  width: 20px;
+  height: 20px;
+  background: #f1f1f1ff;
+  transform: rotate(45deg);
 }
 
 .dropdown-content a {
@@ -199,27 +209,25 @@ body {
   margin: 0.1em;
   z-index: 3;
 }
+
 /*singup button*/
-.sign {
-  border: none;
-  outline: none;
-  width: auto;
-  background-color: purple;
-  padding: 0.6rem 0.6rem;
-  position: relative;
-  border-radius: 8px;
-  letter-spacing: 0.7px;
-  background-color: #5086bd;
-  color: #fff;
-  font-size: 21px;
-  font-family: "Lato", sans-serif;
+.login-signup {
+  float: right;
+  border-radius: 10px;
+  background: linear-gradient(to bottom right, #d0faa5, #8bc94d);
+  padding: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  color: slategrey;
   cursor: pointer;
-  box-shadow: rgba(0, 9, 61, 0.2) 0px 4px 8px 0px;
 }
 
-.sign:hover {
-  opacity: 0.9;
-  background-color: rgb(214, 97, 97);
+.login-signup p {
+  margin-left: 30px;
+}
+
+.login-signup:hover {
+  background-color: rgb(187, 118, 118);
 }
 /*----------------------login form-----------------*/
 .login {
@@ -834,6 +842,7 @@ body {
   z-index: 9;
   box-sizing: border-box;
   border-radius: 10px;
+  transition: 0.5s;
 }
 .Header {
   margin: auto;
@@ -1006,6 +1015,101 @@ hr {
   text-transform: capitalize;
   margin-left: 33%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* user profile */
+.action1 {
+  position: fixed;
+  top: 33px;
+  margin-left: -5px;
+}
+.action1 .profile {
+  position: relative;
+  margin-top: -0.5rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.action1 .profile img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.action1 .menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: -180px;
+  padding: 10px 20px;
+  background-color: #fff;
+  width: 200px;
+  box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: 0.5s;
+}
+.action1 .menu h3 {
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: -10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  padding: 20px 0;
+  font-weight: 500;
+  color: #555;
+  line-height: 1.2em;
+}
+.action1 .menu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 28px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+
+.action1 .menu ul li {
+  list-style: none;
+  padding: 10px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+}
+
+.action1 .menu ul li img {
+  max-width: 20px;
+  margin-right: 10px;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.action1 .menu ul li :hover img {
+  opacity: 1;
+}
+.action1 .menu ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #555;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 500;
+  transition: 0.5s;
+}
+.action1 .menu ul li:hover a {
+  color: #ff5d94;
+}
+
+.login-signup:hover .menu {
+  display: block;
 }
 
 @media screen and (max-width: 1200px) {

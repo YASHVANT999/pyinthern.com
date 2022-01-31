@@ -26,16 +26,30 @@
         <li class="link"><a href="#contacts">contacts</a></li></div>
     </ul>
 <!-- cart icon -->
-<div class="icon-cart" style="clear: left; float: left" onclick="open_cart()">
+<div class="icon-cart" style="clear: left; float: left" onclick="open_cart()" data-aos="flip-left">
     <div class="cart-line-1" style="background-color: #2CC3B5"></div>
     <div class="cart-line-2" style="background-color: #2CC3B5"></div>
     <div class="cart-line-3" style="background-color: #2CC3B5"></div>
     <div class="cart-wheel" style="background-color: #2CC3B5"></div>
     <div class="new-item"></div>
   </div>
-  
+
 <!--singup button-->
-    <button class="sign" onclick="login_page()" data-aos="flip-up">signup/login</button>
+    <!-- user section -->
+    <botton class="login-signup"><div class="action1">
+        <div class="profile">
+            <img src="img/user1.png">
+        </div>
+        <div class="menu">
+            <h3 class="profile-name">hello username</h3>
+            <ul>
+                <li><img src="/img/user.png"><a>Profile</a></li>
+                <li><img src="/img/envelope.png"><a>Inbox</a></li>
+                <li><img src="/img/question.png"><a>Help</a></li>
+                <li><img src="/img/log-out.png"><a onclick="logout()">Logout</a></li>
+            </ul>
+        </div>
+    </div><p id="replaceByUserName">login/signup</p></button>
 </nav>
 <!-- login/signupform -->
 <div class="login hide" id="login">
@@ -48,7 +62,7 @@
   
         <div id="login-form">
           <form>
-            <input type="email" name="email" placeholder="Enter email" required/>
+            <input type="text" name="name" placeholder="Enter username"  id="user-login" required/>
             <input type="password" placeholder="Enter password" required />
             <input type="text" style="width: 42%;" id="capt" readonly>
             <input type="text" style="width: 42%;" placeholder="Enter captcha" id="textinput" required>
@@ -215,7 +229,7 @@
             <h1 class="title">C language</h1>
             <h3 class="subtitle">by Mohd amir</h3>
             </div>
-            <div class="trend">trendig</div>
+            <div class="trend">trending</div>
             <div class="prices">
                 <div class="amount">Rs.1350</div>
                 <div class="save"><u>Save for later</u></div>
@@ -230,7 +244,7 @@
                 <h1 class="title" style="padding-left: 30px;">Python language</h1>
                 <h3 class="subtitle" style="padding-left: 30px;">by Mohd amir</h3>
                 </div>
-                <div class="trend">trendig</div>
+                <div class="trend">trending</div>
                 <div class="prices">
                     <div class="amount">Rs.1350</div>
                     <div class="save"><u>Save for later</u></div>

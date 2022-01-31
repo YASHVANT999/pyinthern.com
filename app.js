@@ -1,6 +1,6 @@
 //--------------------------loginform-------------------------------
 const login_popup = document.querySelector(".hide");
-document.querySelector(".sign").addEventListener("click", function () {
+document.querySelector(".login-signup").addEventListener("click", function () {
   login_popup.classList.remove("hide");
   cap(); //for generatiog new captcha
 });
@@ -118,7 +118,10 @@ function validcap() {
   var stg1 = document.getElementById("capt").value;
   var stg2 = document.getElementById("textinput").value;
   if (stg1 == stg2) {
-    alert("Form is validated Succesfully");
+    const username = document.getElementById("user-login").value;
+    document.getElementById("replaceByUserName").innerHTML = username;
+    document.querySelector("#login").classList.add("hide");
+    document.querySelector(".profile-name").innerHTML = username;
     return true;
   } else {
     alert("Please enter a valid captcha");
@@ -184,4 +187,8 @@ function remove_2() {
   document.querySelector(".whole-checkout").style.display = "none";
   document.querySelector(".Action").style.display = "none";
   document.querySelector(".empty-cart").style.display = "block";
+}
+
+function logout() {
+  window.location.reload();
 }
