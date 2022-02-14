@@ -6,7 +6,7 @@
 }
 body {
   width: 100%;
-  max-width: 1400 px;
+  max-width: 1400px;
   display: block;
   margin: auto;
   min-height: 100vh;
@@ -792,7 +792,7 @@ body {
   height: 280px;
   resize: none;
   font-family: sans-serif;
-  width: 50%;
+  width: 56%;
   margin-bottom: 10px;
   display: block;
   border: solid lightcoral;
@@ -996,6 +996,7 @@ hr {
     "Lucida Sans", Arial, sans-serif;
   font-weight: 600;
   color: #202020;
+  box-shadow: 0 2px 3px;
 }
 .empty-cart {
   align-items: center;
@@ -1044,7 +1045,7 @@ hr {
 .action1 .menu {
   display: none;
   position: absolute;
-  top: 50px;
+  top: 30px;
   right: -180px;
   padding: 10px 20px;
   background-color: #fff;
@@ -1130,5 +1131,11 @@ hr {
   }
   .about-info {
     margin-top: 10rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .home-section {
+    display: block;
   }
 }

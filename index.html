@@ -79,7 +79,7 @@
             <input type="email" name="name" placeholder="Enter your email" required/>
             <input type="password" placeholder="Create password" required/>
             <input type="text" style="width: 42%;" id="signup_capt" readonly>
-            <input type="text" style="width: 42%;" placeholder="Enter captcha" required>
+            <input type="text" style="width: 42%;" placeholder="Enter captcha" id="textinput" required>
             <img src="img/capimg1.png" style="height: 2%; width: 10%;" onclick="cap()">
             <button type="button" class="btn signup" onclick="validcap()">create account</button>
             <p>
@@ -92,7 +92,7 @@
       </div>
 </div>
 <!--home page-->
-<section id=home class="home-section home_container active">
+<section class="home-section home_container active">
     <div class="home_left">
         <h2>Introducing</h2>
         <h1>Pyintern Courses</h1>
@@ -203,10 +203,12 @@
 <!--contact sec-->
 <p class="heading1" id="contacts">contact us</p>
 <section class="contact-section" data-aos="flip-right">
-    <form class="contact-form">
-        <center><input type="text" name="name" id="name" autocomplete="off" placeholder="name" style="border-radius: 3px;opacity: 0.9;" class="name"><br>
-        <div><input type="text" name="email" id="email" autocomplete="off" placeholder="email" style="border-radius: 3px;opacity: 0.9;border: solid lightcoral;height: 30px; margin-top: 8px;"></div><br>
-        <textarea name="msg" id="msg" placeholder="  type your message here" autocomplete="off" style="opacity: 0.9;"></textarea>
+    <form class="contact-form" action="https://sheetdb.io/api/v1/j3ked0ik8p6yc"
+    method="POST"
+    id="sheetdb-form">
+        <center><input type="text" name="FULL_NAME" id="name" autocomplete="off" placeholder="name" style="border-radius: 3px;opacity: 0.9;" class="name"><br>
+        <div><input type="text" name="E-MAIL_ID" id="email" autocomplete="off" placeholder="email" style="border-radius: 3px;opacity: 0.9;border: solid lightcoral;height: 30px; margin-top: 8px;"></div><br>
+        <textarea name="MESSAGE" id="msg" placeholder="  type your message here(max 75 words)" autocomplete="off" style="opacity: 0.9;" maxlength="75"></textarea>
         <button type="submit" class="form-submit-btn">contact</button></center>
     </form>
     <h3 class="about-section">About Us</h3><br>
@@ -261,7 +263,7 @@
                 </div>
                 <div class="total-amount">Rs.1350</div>
                 </div>
-                <button class="button">Checkout</button>
+                <a href="REGISTRATION FORM/index.html" target="_blank"><button class="button">Checkout</button></a>
                </div></div>
 <div class="empty-cart">
     <center><img src="img/empty-cart.png" class="empty-img"></center>
