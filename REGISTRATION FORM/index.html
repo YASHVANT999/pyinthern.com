@@ -1,6 +1,14 @@
 <html>
   <head>
     <title>Registration form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -9,7 +17,7 @@
       <center><h3 class="head">register here</h3></center>
     </div>
     <form
-      action="https://sheetdb.io/api/v1/wfaqxbeipjan3"
+      action="https://sheetdb.io/api/v1/a3sncy8law13g"
       method="POST"
       id="sheetdb-form"
     >
@@ -21,61 +29,61 @@
           <label>first name </label>
           <input
             type="text"
-            name="FIRST_NAME"
+            name="data[FIRST_NAME]"
             placeholder="Enter First name"
             required
           /><br />
-          <label>last name </label>
+          <label style="margin-left: 2px">last name </label>
           <input
             type="text"
-            name="LAST_NAME"
+            name="data[LAST_NAME]"
             placeholder="Enter Last name"
             required
           /><br />
-          <label style="margin-left: -16px">Date of birth </label>
-          <input type="date" name="DOB" required /><br />
-          <label style="margin-left: -25px">father's name</label>
+          <label style="margin-left: -18px">Date of birth </label>
+          <input type="date" name="data[DOB]" required /><br />
+          <label style="margin-left: -27px">father's name</label>
           <input
             type="text"
-            name="FATHERS_NAME"
+            name="data[FATHERS_NAME]"
             placeholder="Enter Father's name"
             required
           /><br />
-          <label>nationality</label>
-          <select name="NATIONALITY">
+          <label style="margin-left: -1px">nationality</label>
+          <select name="data[NATIONALITY]">
             <option>Indian</option>
             <option>NRI</option>
             <option>foreigner</option></select
           ><br />
           <label style="margin-left: 28px">gender</label>
-          <select name="GENDER">
+          <select name="data[GENDER]">
             <option>Male</option>
             <option>Female</option></select
           ><br />
-          <label>mobile no.</label>
+          <label style="margin-left: 2px">mobile no.</label>
           <input
             type="number"
-            name="MOBILE"
+            name="data[MOBILE]"
             placeholder="Enter Mobile Number"
             required
           /><br />
-          <label style="margin-left: -29px">e-mail address</label>
+          <label style="margin-left: -31px">e-mail address</label>
           <input
             type="email"
-            name="E-MAIL"
+            name="data[E-MAIL]"
             placeholder="Enter E-mail"
             required
           /><br /><br /><br />
-          <label style="margin-left: -70px">alternate mobile no.</label>
+          <label style="margin-left: -72px">alternate mobile no.</label>
           <input
             type="number"
-            name="ALTERNATE_MOBILE"
+            name="data[ALTERNATE_MOBILE]"
             placeholder="Enter Alternate Mob"
           /><br />
-          <label style="margin-left: -32px">alternate E-mail</label>
+          <label style="margin-left: -35px">alternate E-mail</label>
           <input
             type="email"
-            name="ALTERNATE_E-MAIL"
+            name="data[ALTERNATE_E-MAIL]"
             placeholder="Enter Alternate E-mail"
           />
         </center>
@@ -87,38 +95,38 @@
       <div class="educational-details">
         <center>
           <label style="margin-left: -25px">working status</label>
-          <select name="STATUS">
+          <select name="data[STATUS]">
             <option>Student</option>
             <option>Employed</option>
             <option>Unemployed</option></select
           ><br />
           <label style="margin-left: 38px">course</label>
-          <select name="COURSE">
+          <select name="data[COURSE]">
             <option>B.TECH</option>
             <option>Others</option></select
           ><br />
-          <label style="margin-left: 38px">branch</label>
-          <select name="BRANCH">
+          <label style="margin-left: 40px">branch</label>
+          <select name="data[BRANCH]">
             <option>Information Technology(IT)</option>
             <option>Mechanical Engineering(ME)</option>
             <option>Civil Engineering(CE)</option></select
           ><br />
-          <label style="margin-left: -16px">college name</label>
+          <label style="margin-left: -14px">college name</label>
           <input
             type="text"
-            name="COLLEGE_NAME"
+            name="data[COLLEGE_NAME]"
             placeholder="Enter College Name"
             required
           /><br />
           <label>college city</label>
           <input
             type="text"
-            name="COLLEGE_CITY"
+            name="data[COLLEGE_CITY]"
             placeholder="Enter College City"
             required
           /><br />
-          <label style="margin-left: -5px">college state</label>
-          <select name="COLLEGE_STATE">
+          <label style="margin-left: -8px">college state</label>
+          <select name="data[COLLEGE_STATE]">
             <option>Uttar Pradesh</option>
             <option>Others</option>
           </select>
@@ -131,26 +139,26 @@
       <center>
         <div class="training-type">
           <label style="margin-left: -9px">training type</label>
-          <select name="TYPE">
+          <select name="data[TYPE]">
             <option>Summer Training</option></select
           ><br />
-          <label style="margin-left: -10px">training mode</label>
-          <select name="MODE">
+          <label style="margin-left: -13px">training mode</label>
+          <select name="data[MODE]">
             <option>Online</option></select
           ><br />
-          <label style="margin-left: -52px">course to be joined</label>
-          <select name="COURSE_JOINED">
+          <label style="margin-left: -57px">course to be joined</label>
+          <select name="data[COURSE_JOINED]">
             <option>C programming</option>
             <option>Python programming</option>
             <option>Machine Learning</option></select
           ><br />
-          <label style="margin-left: 23px">batch date</label>
-          <select name="BATCH_DATE">
+          <label style="margin-left: 17px">batch date</label>
+          <select name="data[BATCH_DATE]">
             <option>Tuesday, Feb 24, 2022</option>
             <option>Monday, Mar 01, 2022</option></select
           ><br />
-          <label style="margin-left: 38px">duration</label>
-          <select name="DURATION">
+          <label style="margin-left: 31px">duration</label>
+          <select name="data[DURATION]">
             <option>6 Weeks</option>
           </select>
         </div>
@@ -190,6 +198,29 @@
         </button>
       </center>
     </form>
+    <div class="wrapper">
+      <div class="toast success hide">
+        <div class="container-1">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="container-2">
+          <p>Success</p>
+          <p>Your changes are saved successfully</p>
+        </div>
+        <button>&times;</button>
+      </div>
+      <div class="toast error hide">
+        <div class="container-1">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="container-2">
+          <p>Error</p>
+          <p>Please re-enter the details and captcha again</p>
+        </div>
+        <button>&times;</button>
+      </div>
+    </div>
+
     <script src="app.js"></script>
   </body>
 </html>

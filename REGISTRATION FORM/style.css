@@ -111,8 +111,64 @@ button {
   margin-top: -2px;
 }
 
-@media screen and (max-width: 970px) {
-  body {
-    background-color: tomato;
-  }
+.wrapper {
+  width: 380px;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 10%;
+  left: 52.5%;
+}
+.toast {
+  width: 100%;
+  height: 80px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 7px;
+  display: grid;
+  grid-template-columns: 1.3fr 6fr 0.5fr;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+.success {
+  border-left: 8px solid #47d764;
+}
+.error {
+  border-left: 8px solid #ff355b;
+}
+.error i {
+  color: #ff355b;
+}
+.toast:not(:last-child) {
+  margin-bottom: 50px;
+}
+.container-1,
+.container-2 {
+  align-self: center;
+}
+.container-1 i {
+  font-size: 35px;
+}
+.success i {
+  color: #47d764;
+}
+.container-2 p:first-child {
+  color: #101020;
+  font-weight: 600;
+  font-size: 16px;
+}
+.container-2 p:last-child {
+  font-size: 12px;
+  font-weight: 400;
+  color: #656565;
+}
+.toast button {
+  align-self: flex-start;
+  background-color: transparent;
+  font-size: 25px;
+  color: #656565;
+  line-height: 0;
+  border: 0;
+}
+
+.hide {
+  display: none;
 }

@@ -85,30 +85,40 @@ function cap() {
   document.getElementById("signup_capt").value = final;
 }
 function validcap() {
+  document.querySelector("form").action =
+    "https://sheetdb.io/api/v1/a3sncy8law13g";
   var stg1 = document.getElementById("capt").value;
   var stg2 = document.getElementById("textinput").value;
   if (stg1 == stg2) {
-    alert("Form validated successfully");
+    document.querySelector(".success").classList.remove("hide");
+    setTimeout(function () {
+      document.querySelector(".success").classList.add("hide");
+    }, 2000);
+    document.querySelector(".error").classList.add("hide");
+    var form = document.getElementById("sheetdb-form");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch(form.action, {
+        method: "POST",
+        body: new FormData(document.getElementById("sheetdb-form")),
+      })
+        .then((response) => response.json())
+        .then((html) => {
+          // you can put any JS code here
+          window.location.href =
+            "https://www.payumoney.com/paybypayumoney/#/AD743282918502F755C27A37FCB4766B";
+        });
+    });
     return true;
   } else {
-    alert("Please enter a valid captcha");
+    document.querySelector(".success").classList.add("hide");
+    document.querySelector(".error").classList.remove("hide");
+    document.querySelector("form").removeAttribute("action");
+    setTimeout(() => {
+      document.querySelector(".error").classList.add("hide");
+    }, 2000);
     return false;
   }
 }
 
 cap();
-
-// api code
-var form = document.getElementById("sheetdb-form");
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  fetch(form.action, {
-    method: "POST",
-    body: new FormData(document.getElementById("sheetdb-form")),
-  })
-    .then((response) => response.json())
-    .then((html) => {
-      // you can put any JS code here
-      alert("success");
-    });
-});

@@ -158,6 +158,7 @@ function add_to_cart_1() {
   document.querySelector(".whole-checkout").style.display = "block";
   document.querySelector(".cart1").innerHTML = "Go to cart";
   document.querySelector(".cart2").innerHTML = "Add to cart";
+  document.querySelector(".cart-section").style.display = "block";
 }
 
 function add_to_cart_2() {
@@ -169,6 +170,7 @@ function add_to_cart_2() {
   document.querySelector(".whole-checkout").style.display = "block";
   document.querySelector(".cart2").innerHTML = "Go to cart";
   document.querySelector(".cart1").innerHTML = "Add to cart";
+  document.querySelector(".cart-section").style.display = "block";
 }
 
 function remove_1() {
@@ -203,8 +205,15 @@ form.addEventListener("submit", (e) => {
   })
     .then((response) => response.json())
     .then((html) => {
-      // you can put any JS code here
-      alert("success");
+      window.location.reload();
     });
-  window.location.reload();
 });
+
+document
+  .querySelector(".form-submit-btn")
+  .addEventListener("click", function () {
+    document.querySelector(".toast").classList.remove("hidden");
+    setTimeout(() => {
+      document.querySelector(".toast").classList.add("hidden");
+    }, 2000);
+  });
