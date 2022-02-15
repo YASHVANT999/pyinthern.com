@@ -205,15 +205,13 @@ form.addEventListener("submit", (e) => {
   })
     .then((response) => response.json())
     .then((html) => {
-      window.location.reload();
+      document.querySelector(".toast").classList.remove("hidden");
+      setTimeout(() => {
+        document.querySelector(".toast").classList.add("hidden");
+      }, 2000);
+
+      setTimeout(() => {
+        window.location.reload();
+      }, 2010);
     });
 });
-
-document
-  .querySelector(".form-submit-btn")
-  .addEventListener("click", function () {
-    document.querySelector(".toast").classList.remove("hidden");
-    setTimeout(() => {
-      document.querySelector(".toast").classList.add("hidden");
-    }, 2000);
-  });

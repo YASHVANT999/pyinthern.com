@@ -845,7 +845,7 @@ body {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
 }
 .success {
-  border-left: 8px solid #47d764;
+  border-left: 10px solid #47d764;
 }
 .toast:not(:last-child) {
   margin-bottom: 50px;
@@ -854,11 +854,10 @@ body {
 .container-2 {
   align-self: center;
 }
-.container-1 i {
-  font-size: 35px;
-}
-.success i {
-  color: #47d764;
+.container-1 img {
+  height: 75%;
+  width: 55%;
+  margin-right: -10px;
 }
 .container-2 p:first-child {
   color: #101020;
