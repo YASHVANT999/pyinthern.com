@@ -935,6 +935,7 @@ body {
 .image-box {
   width: 15%;
   text-align: center;
+  filter: drop-shadow(0 0 10px #6cf7a6);
 }
 .about {
   height: 100%;
@@ -970,7 +971,8 @@ body {
     "Lucida Sans", Arial, sans-serif;
   background-color: rgb(247, 247, 164);
   font: solid;
-  color: #909090;
+  color: solid black;
+  filter: drop-shadow(0 0 2px #ff7b7b);
 }
 .prices {
   height: 100%;
