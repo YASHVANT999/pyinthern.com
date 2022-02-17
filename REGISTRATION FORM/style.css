@@ -172,3 +172,174 @@ button {
 .hide {
   display: none;
 }
+
+@media (max-width: 710px) {
+  .heading img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1px;
+    margin-top: -20px;
+  }
+
+  .head {
+    margin-top: -35px;
+    margin-right: -30px;
+  }
+  .details p {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 675px) {
+  .personal-details,
+  .educational-details,
+  .training-type,
+  .fee-details,
+  .decleration label {
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 10px;
+    margin-bottom: 13px;
+  }
+
+  .personal-details input,
+  select {
+    width: 300px;
+  }
+
+  .educational-details input {
+    width: 300px;
+  }
+
+  .fee-details input {
+    width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .head {
+    font-size: 22px;
+  }
+  .heading img {
+    height: 120px;
+    width: 250px;
+  }
+  .details p {
+    padding: 7px;
+    margin-left: 20px;
+    width: 150px;
+    font-weight: 400;
+  }
+
+  .decleration {
+    margin-left: 20px;
+  }
+
+  #capt,
+  #textinput {
+    height: 30px;
+    width: 120px;
+    background: rgb(232, 239, 247);
+  }
+
+  .captimg {
+    height: 34px;
+    width: 30px;
+    padding-top: 10px;
+    margin-bottom: -5px;
+  }
+
+  center button {
+    margin: 8px;
+    padding: 5px;
+    font-size: 17px;
+    margin-top: -2px;
+    margin-bottom: 15px;
+  }
+
+  .personal-details,
+  .educational-details,
+  .training-type,
+  .fee-details,
+  .decleration label {
+    font-size: 15px;
+    margin-right: 8px;
+  }
+
+  .personal-details input,
+  select {
+    width: 230px;
+  }
+
+  .educational-details input {
+    width: 230px;
+  }
+
+  .fee-details input {
+    width: 230px;
+  }
+}
+
+@media (max-width: 420px) {
+  .personal-details input,
+  select {
+    width: 220px;
+  }
+
+  .educational-details input {
+    width: 220px;
+  }
+
+  .fee-details input {
+    width: 220px;
+  }
+
+  #capt,
+  #textinput {
+    height: 30px;
+    width: 110px;
+  }
+}
+
+@media (max-width: 395px) {
+  .details p {
+    padding: 5px;
+    margin-left: 15px;
+    width: 130px;
+    font-weight: 400;
+  }
+
+  .decleration {
+    margin-left: 15px;
+  }
+  .personal-details input,
+  select {
+    width: 200px;
+  }
+
+  .educational-details input {
+    width: 200px;
+  }
+
+  .fee-details input {
+    width: 200px;
+  }
+
+  #capt,
+  #textinput {
+    height: 25px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 370px) {
+  .personal-details,
+  .educational-details,
+  .training-type,
+  .fee-details,
+  .decleration label {
+    font-size: 12px;
+    margin-right: 8px;
+  }
+}

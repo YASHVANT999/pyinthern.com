@@ -1170,24 +1170,3 @@ hr {
 .login-signup:hover .menu {
   display: block;
 }
-
-@media screen and (max-width: 1200px) {
-  .skill-section {
-    margin-top: 5rem;
-  }
-  #msg {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .project-section {
-    display: block;
-  }
-  .skill-section {
-    margin-top: -8rem;
-  }
-  .about-info {
-    margin-top: 10rem;
-  }
-}
