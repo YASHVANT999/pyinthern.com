@@ -280,6 +280,33 @@ button {
   .fee-details input {
     width: 230px;
   }
+
+  .wrapper {
+    width: 250px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 10%;
+    left: 52.5%;
+  }
+  .toast {
+    height: 70px;
+  }
+  .toast:not(:last-child) {
+    margin-bottom: 50px;
+  }
+  .container-1 i {
+    font-size: 35px;
+  }
+  .container-2 p:first-child {
+    font-size: 16px;
+    margin-left: 6px;
+  }
+  .container-2 p:last-child {
+    font-size: 11px;
+  }
+  .toast button {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 420px) {
