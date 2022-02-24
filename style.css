@@ -1710,7 +1710,7 @@ hr {
   }
 
   .skill-info {
-    font-size: 10px;
+    font-size: 11px;
     line-height: 11px;
   }
 
@@ -1741,5 +1741,203 @@ hr {
   }
   ::placeholder {
     font-size: 11px;
+  }
+}
+
+@media (max-width: 630px) {
+  .contact-section {
+    display: block;
+  }
+  #name,
+  #email {
+    width: 18em;
+  }
+
+  #msg {
+    margin-top: -2em;
+    width: 18em;
+    height: 280px;
+  }
+
+  .form-submit-btn {
+    padding: 10px 27px;
+  }
+  .about-section {
+    margin-top: 2em;
+    margin-left: -1.5rem;
+  }
+  .about-info {
+    margin-top: 1em;
+    font-size: 15px;
+    margin-left: -1.5rem;
+  }
+  ::placeholder {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 560px) {
+  .home_left h2 {
+    font-size: 42px;
+  }
+
+  .home_left h1 {
+    font-size: 60px;
+  }
+
+  .home_left h3 {
+    font-size: 42px;
+  }
+  .home_left h4 {
+    font-size: 17px;
+  }
+  .exp {
+    font-size: 9px;
+  }
+  /* .home_right img {
+    display: none;
+  } */
+  .project-heading {
+    margin-top: -30px;
+    font-size: 46px;
+  }
+  .project-card {
+    height: 245px;
+    width: 410px;
+  }
+  .skill-container {
+    width: 500px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+  }
+
+  .skill-img {
+    height: 100px;
+  }
+
+  .skill-name {
+    font-size: 16px;
+  }
+
+  .skill-info {
+    font-size: 12px;
+    line-height: 11px;
+  }
+
+  .skill-level {
+    top: 32px;
+    width: 85px;
+    height: 85px;
+    font-size: 16px;
+    left: 120px;
+  }
+  .heading1 {
+    font-size: 40px;
+    justify-items: center;
+  }
+  #name,
+  #email {
+    width: 18em;
+  }
+
+  #msg {
+    margin-top: -2em;
+    width: 18em;
+    height: 240px;
+  }
+
+  .form-submit-btn {
+    padding: 10px 24px;
+    margin-left: 60px;
+  }
+  .about-section {
+    margin-top: 2em;
+    margin-left: -1.5rem;
+  }
+  .about-info {
+    margin-top: 1em;
+    font-size: 15px;
+    margin-left: -1.5rem;
+    display: flex;
+  }
+  ::placeholder {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .home_left h2 {
+    font-size: 38px;
+  }
+
+  .home_left h1 {
+    font-size: 52px;
+  }
+
+  .home_left h3 {
+    font-size: 37px;
+    margin-left: 300px;
+  }
+  .home_left h4 {
+    font-size: 15px;
+  }
+  .exp {
+    font-size: 8px;
+  }
+  .home_right img {
+    display: none;
+  }
+  .project-heading {
+    font-size: 40px;
+  }
+  .project-card {
+    height: 220px;
+    width: 350px;
+  }
+  .skill-container {
+    grid-gap: 32px;
+  }
+
+  .skill-img {
+    height: 85px;
+  }
+
+  .skill-name {
+    font-size: 14.5px;
+  }
+
+  .skill-info {
+    font-size: 11px;
+    line-height: 10px;
+  }
+
+  .skill-level {
+    top: 28px;
+    width: 75px;
+    height: 75px;
+    font-size: 14.5px;
+    border: 8px solid;
+  }
+  .heading1 {
+    font-size: 35px;
+  }
+  #name,
+  #email {
+    width: 17em;
+  }
+
+  #msg {
+    margin-top: -2em;
+    width: 17em;
+    height: 230px;
+  }
+  .about-section {
+    font-size: 17px;
+  }
+  .about-info {
+    font-size: 13px;
+  }
+  ::placeholder {
+    font-size: 12px;
   }
 }
