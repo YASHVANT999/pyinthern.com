@@ -11,7 +11,7 @@ body {
   margin: auto;
   min-height: 100vh;
   background: #191919;
-  font-family: sans-serif;
+  font-family: cursive;
   overflow-x: hidden;
 }
 
@@ -57,36 +57,38 @@ body {
 }
 
 .dropdown-content {
-  display: none;
+  background-color: rgb(1, 139, 139);
+  padding: 1em 0;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 250px;
-  border: solid lightcoral;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  z-index: 1;
+  display: none;
+  border-radius: 8px;
+  top: 70px;
+  right: -50px;
 }
 
 .dropdown .dropdown-content::before {
   content: "";
   position: absolute;
   top: -5px;
-  left: 40px;
-  width: 20px;
-  height: 20px;
-  background: #f1f1f1ff;
+  left: 20px;
+  width: 17px;
+  height: 17px;
+  background: rgb(1, 139, 139);
   transform: rotate(45deg);
 }
 
 .dropdown-content a {
-  color: black;
+  color: #f1f1f1;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  padding-right: 105px;
+  font-size: 20px;
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #4c9e9e;
+  color: rgb(235, 88, 88);
 }
 
 .dropdown:hover .dropdown-content {
@@ -218,7 +220,7 @@ body {
   border-radius: 10px;
   background: linear-gradient(to bottom right, #d0faa5, #8bc94d);
   padding: 10px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: cursive;
   font-weight: bold;
   color: slategrey;
   cursor: pointer;
@@ -266,6 +268,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   background: #fff;
+  font-family: cursive;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -288,6 +291,7 @@ body {
   border: none;
   font-weight: bold;
   font-size: 1.2em;
+  font-family: cirsive;
   padding: 0.8em 1em 0.8em 1em !important;
   transition: 0.5s;
   border: 1px solid #ebebeb;
@@ -321,6 +325,7 @@ body {
   transition: 0.2s;
   font-size: 1.1em;
   font-weight: bold;
+  font-family: cursive;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
@@ -425,6 +430,10 @@ body {
 
 .-box-sd-effect:hover {
   box-shadow: 0 4px 8px hsla(210, 2%, 84%, 0.2);
+}
+
+::placeholder {
+  font-family: cursive;
 }
 
 .hide {
@@ -976,7 +985,6 @@ body {
   background-color: rgb(247, 247, 164);
   font: solid;
   color: solid black;
-  filter: drop-shadow(0 0 2px #ff7b7b);
 }
 .prices {
   height: 100%;
