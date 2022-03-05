@@ -8,15 +8,20 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 </head>
 <body>
 <nav class="navbar">
-    <ul class="link-group">
-        <li class="link active"><a href="#home">home</a></li>
-        <li class="link"><a href="#courses">courses</a></li>
-        <li class="link"><a href="#skills">skills</a></li>
-        <div class="dropdown"><li class="link"><a>notes</a></li><div class="dropdown-content">
+    <div class="logo">РYIͥNᴛⷮEͤRͬN</div>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Skills</a></li>
+        <div class="dropdown"><li class="link"><a>Notes</a></li><div class="dropdown-content">
             <a href="#">Link 1</a>
             <a href="#">Link 2</a>
             <a href="#">Link 3</a>
@@ -24,74 +29,19 @@
             <a href="#">Link 5</a>
           </div>
         </div>
-        <li class="link"><a href="#contacts">contacts</a></li></div>
-    </ul>
-<!-- cart icon -->
-<div class="icon-cart" style="clear: left; float: left" onclick="open_cart()" data-aos="flip-left">
-    <div class="cart-line-1" style="background-color: #2CC3B5"></div>
-    <div class="cart-line-2" style="background-color: #2CC3B5"></div>
-    <div class="cart-line-3" style="background-color: #2CC3B5"></div>
-    <div class="cart-wheel" style="background-color: #2CC3B5"></div>
-    <div class="new-item"></div>
-  </div>
+        <li><a href="#">Contacts</a></li>
+        <!-- cart icon -->
+        <div class="icon-cart" onclick="open_cart()" data-aos="flip-left">
+            <div class="cart-line-1" style="background-color: #2CC3B5"></div>
+            <div class="cart-line-2" style="background-color: #2CC3B5"></div>
+            <div class="cart-line-3" style="background-color: #2CC3B5"></div>
+            <div class="cart-wheel" style="background-color: #2CC3B5"></div>
+            <div class="new-item"></div>
+          </div>
+        </ul>
+    </nav>
 
-<!--singup button-->
-    <!-- user section -->
-    <botton class="login-signup"><div class="action1">
-        <div class="profile">
-            <img src="img/user1.png">
-        </div>
-        <div class="menu">
-            <h3 class="profile-name" id="yash">hello username</h3>
-            <ul>
-                <li><img src="profileimage/user.png"><a>Profile</a></li>
-                <li><img src="profileimage/envelope.png"><a>Inbox</a></li>
-                <li><img src="profileimage/question.png"><a>Help</a></li>
-                <li><img src="profileimage/log-out.png"><a onclick="logout()">Logout</a></li>
-            </ul>
-        </div>
-    </div><p id="replaceByUserName">login/signup</p></button>
-</nav>
-<!-- login/signupform -->
-<div class="login hide" id="login">
-    <button class="close-modal">&times;</button>
-    <div class="form-modal">
-        <div class="form-toggle">
-          <button id="login-toggle" onclick="toggleLogin()">log in</button>
-          <button id="signup-toggle" onclick="toggleSignup()">sign up</button>
-        </div>
-  
-        <div id="login-form">
-          <form>
-            <input type="text" name="name" placeholder="Enter username"  id="user-login" required/>
-            <input type="password" placeholder="Enter password" required />
-            <input type="text" style="width: 42%;" id="capt" readonly>
-            <input type="text" style="width: 42%;" placeholder="Enter captcha" id="textinput" required>
-            <img src="img/capimg1.png" style="height: 2%; width: 10%;" onclick="cap()">
-            <button type="button" class="btn login" style="margin-top:2rem" onclick="validcap()">login</button>
-            <p><a href="javascript:void(0)">Forgotten account</a></p>
-            <hr />
-          </form>
-        </div>
-  
-        <div id="signup-form">
-          <form>
-            <input type="text" name="name" placeholder="Choose username" required/>
-            <input type="email" name="name" placeholder="Enter your email" required/>
-            <input type="password" placeholder="Create password" required/>
-            <input type="text" style="width: 42%;" id="signup_capt" readonly>
-            <input type="text" style="width: 42%;" placeholder="Enter captcha" id="textinput" required>
-            <img src="img/capimg1.png" style="height: 2%; width: 10%;" onclick="cap()">
-            <button type="button" class="btn signup" onclick="validcap()">create account</button>
-            <p>
-              Clicking <strong>create account</strong> means that you are agree to
-              our <a href="javascript:void(0)">terms of services</a>.
-            </p>
-            <hr />
-          </form>
-        </div>
-      </div>
-</div>
+
 <!--home page-->
 <section class="home-section home_container active" id="home">
     <div class="home_left">
@@ -128,7 +78,7 @@
         </div>
     </div>
     <div class="home_right">
-        <img src="img/1632026968831.jpg" alt="Mohd. Amir">
+        <img src="img/main1.jpg" alt="Mohd. Amir">
     </div>
 </section>
 <!--project page-->
