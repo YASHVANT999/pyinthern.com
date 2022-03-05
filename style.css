@@ -80,7 +80,7 @@ input[type="checkbox"] {
     top: 80px;
     left: -100%;
     background: #111;
-    height: 85vh;
+    height: 75vh;
     width: 100%;
     text-align: center;
     display: block;
@@ -114,6 +114,13 @@ input[type="checkbox"] {
   .link a {
     margin-top: -40px;
     margin-bottom: -40px;
+  }
+  .dropdown-content {
+    margin-top: -40px;
+    margin-right: -85px;
+  }
+  .dropdown .dropdown-content::before {
+    display: none;
   }
 }
 /*notes section*/
@@ -268,7 +275,7 @@ input[type="checkbox"] {
   bottom: 0;
 }
 
-/* .new-item {
+.new-item {
   display: none;
   float: right;
   width: 10px;
@@ -277,19 +284,7 @@ input[type="checkbox"] {
   border-radius: 50%;
   margin: 0.1em;
   z-index: 3;
-} */
-
-.close-modal {
-  position: absolute;
-  top: 1.5rem;
-  right: 1rem;
-  font-size: 3.5rem;
-  color: #333;
-  cursor: pointer;
-  border: none;
-  background: none;
 }
-
 /*home section*/
 .home_container {
   padding-top: 40px;
@@ -392,6 +387,7 @@ input[type="checkbox"] {
   height: 100vh;
   object-fit: cover;
   object-position: top;
+  border: solid #1e1e1f;
 }
 
 @keyframes fadeup {
@@ -760,6 +756,16 @@ input[type="checkbox"] {
   font-weight: 700;
   color: #2f3841;
 }
+.close-modal {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  font-size: 3.5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
 .Action {
   font-size: 14px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -918,6 +924,57 @@ hr {
   text-transform: capitalize;
   margin-left: 33%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* media query for cart */
+@media (max-width: 1250px) {
+  .Action {
+    font-size: 11px;
+  }
+  .cart-img {
+    height: 100px;
+  }
+  .cart-section {
+    height: 80%;
+  }
+  .hheading {
+    font-size: 25px;
+    margin-top: -45px;
+  }
+  .empty-cart {
+    margin: auto;
+    padding: 20px;
+  }
+  .close-modal {
+    font-size: 3rem;
+    top: 1rem;
+  }
+  .empty-img {
+    height: 100px;
+  }
+  .empty-message {
+    font-size: 25px;
+  }
+}
+@media (max-width: 780px) {
+  .hheading {
+    font-size: 20px;
+    margin-top: -10px;
+  }
+  .empty-cart {
+    padding: 15px;
+  }
+
+  .close-modal {
+    font-size: 2.5rem;
+    top: 1.7rem;
+  }
+  .empty-img {
+    height: 70px;
+  }
+  .empty-message {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 1250px) {
@@ -1568,9 +1625,9 @@ hr {
   .exp {
     font-size: 8px;
   }
-  .home_right img {
+  /* .home_right img {
     display: none;
-  }
+  } */
   .project-heading {
     font-size: 40px;
   }
