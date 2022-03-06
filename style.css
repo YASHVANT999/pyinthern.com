@@ -931,11 +931,19 @@ hr {
   .Action {
     font-size: 11px;
   }
-  .cart-img {
-    height: 100px;
-  }
   .cart-section {
     height: 80%;
+  }
+  .image-box img {
+    height: 50px;
+    width: 50px;
+  }
+  .title {
+    font-size: 25px;
+    margin: -15px 30px 5px;
+  }
+  .subtitle {
+    margin: 0 35px;
   }
   .hheading {
     font-size: 25px;
@@ -1490,7 +1498,8 @@ hr {
 
 @media (max-width: 630px) {
   .contact-section {
-    display: block;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 150px;
   }
   #name,
   #email {
@@ -1502,16 +1511,12 @@ hr {
     width: 18em;
     height: 280px;
   }
-
-  .form-submit-btn {
-    padding: 10px 27px;
-  }
   .about-section {
     margin-top: 2em;
     margin-left: -1.5rem;
   }
   .about-info {
-    margin-top: 1em;
+    margin-top: -9rem;
     font-size: 15px;
     margin-left: -1.5rem;
   }
@@ -1596,7 +1601,7 @@ hr {
     margin-left: -1.5rem;
   }
   .about-info {
-    margin-top: 1em;
+    margin-top: -9em;
     font-size: 15px;
     margin-left: -1.5rem;
     display: flex;
@@ -1606,7 +1611,7 @@ hr {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 520px) {
   .home_left h2 {
     font-size: 38px;
   }
@@ -1625,9 +1630,6 @@ hr {
   .exp {
     font-size: 8px;
   }
-  /* .home_right img {
-    display: none;
-  } */
   .project-heading {
     font-size: 40px;
   }
@@ -1680,5 +1682,119 @@ hr {
   }
   ::placeholder {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  nav {
+    height: 65px;
+    padding: 0 40px 0 80px;
+  }
+  nav .logo {
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: -20px;
+  }
+  nav ul {
+    top: 65px;
+  }
+  nav .menu-btn i {
+    font-size: 19px;
+  }
+  .home_left h2 {
+    font-size: 35px;
+  }
+
+  .home_left h1 {
+    font-size: 45px;
+    margin-left: 110px;
+  }
+
+  .home_left h3 {
+    font-size: 33px;
+    margin-left: 270;
+  }
+  .home_left h4 {
+    font-size: 12px;
+  }
+  .one_exp {
+    padding-right: 8.5px;
+  }
+  .exp {
+    font-size: 7px;
+  }
+  .home_right {
+    height: 65vh;
+  }
+  .project-section {
+    margin-top: 50px;
+  }
+  .project-heading {
+    font-size: 35px;
+    margin-top: 20px;
+  }
+  .project-card {
+    height: 210px;
+    width: 350px;
+  }
+  .heading {
+    font-size: 32px;
+  }
+  .skill-container {
+    width: 450px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+
+  .skill-img {
+    height: 85px;
+  }
+
+  .skill-name {
+    font-size: 12px;
+  }
+
+  .skill-info {
+    font-size: 8px;
+    line-height: 8px;
+  }
+
+  .skill-level {
+    top: 28px;
+    width: 70px;
+    height: 70px;
+    font-size: 13px;
+    left: 110px;
+    border: 6px solid;
+  }
+  .heading1 {
+    font-size: 33px;
+    justify-items: center;
+  }
+  #name,
+  #email {
+    width: 16em;
+  }
+
+  #msg {
+    margin-top: -1.7em;
+    width: 16em;
+    height: 220px;
+  }
+
+  .form-submit-btn {
+    margin-left: 60px;
+  }
+  .about-section {
+    font-size: 12px;
+  }
+  .about-info {
+    margin-top: -12em;
+    font-size: 10px;
+    margin-left: -1.5rem;
+    display: flex;
+  }
+  ::placeholder {
+    font-size: 10px;
   }
 }
