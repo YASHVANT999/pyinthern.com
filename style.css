@@ -1730,7 +1730,7 @@ hr {
   }
   .project-heading {
     font-size: 35px;
-    margin-top: -9rem;
+    margin-top: -12rem;
   }
   .project-card {
     height: 210px;
@@ -1814,5 +1814,71 @@ hr {
 
   .form-submit-btn {
     margin-left: 30px;
+  }
+}
+
+@media (max-width: 449px) {
+  .home_left h2 {
+    font-size: 32px;
+    margin-left: -8px;
+  }
+
+  .home_left h1 {
+    font-size: 42px;
+    margin-left: 80px;
+  }
+
+  .home_left h3 {
+    font-size: 33px;
+    margin-left: 240;
+  }
+  .home_left h4 {
+    font-size: 12px;
+  }
+  .project-heading {
+    font-size: 35px;
+  }
+  .project-card {
+    height: 210px;
+    width: 320px;
+  }
+  .project-info {
+    line-height: 15px;
+  }
+  .skill-container {
+    grid-gap: 15px;
+  }
+  .skill-img {
+    height: 75px;
+  }
+  .skill-info {
+    font-size: 7px;
+  }
+  .skill-level {
+    top: 25px;
+    width: 60px;
+    height: 60px;
+    border: 5px solid;
+  }
+  .heading1 {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  #name,
+  #email {
+    width: 16em;
+    margin-top: -2rem;
+    margin-left: -1rem;
+  }
+
+  #msg {
+    margin-top: -1.7em;
+    width: 16em;
+    height: 205px;
+    margin-left: -1rem;
+  }
+
+  .form-submit-btn {
+    margin-left: 40px;
   }
 }

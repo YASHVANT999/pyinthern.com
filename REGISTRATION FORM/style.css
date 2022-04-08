@@ -115,7 +115,7 @@ button {
   width: 380px;
   position: fixed;
   transform: translate(-50%, -50%);
-  top: 10%;
+  top: 15%;
   left: 52.5%;
 }
 .toast {
@@ -168,7 +168,6 @@ button {
   line-height: 0;
   border: 0;
 }
-
 .hide {
   display: none;
 }

@@ -82,7 +82,6 @@ function cap() {
 
   var final = a + b + c + d + e + f;
   document.getElementById("capt").value = final;
-  document.getElementById("signup_capt").value = final;
 }
 function validcap() {
   document.querySelector("form").action =
