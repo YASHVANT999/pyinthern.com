@@ -786,7 +786,10 @@ input[type="checkbox"] {
 .image-box {
   width: 15%;
   text-align: center;
-  filter: drop-shadow(0 0 10px #6cf7a6);
+}
+.image-box img {
+  height: 120px;
+  width: 192;
 }
 .about {
   height: 100%;
@@ -910,11 +913,13 @@ hr {
   align-items: center;
   margin: 1rem;
   padding: 50px;
-  border: solid;
+  border: solid rgb(81, 79, 79);
 }
 .empty-img {
   height: 120px;
   width: auto;
+  margin-left: 42%;
+  margin-right: 50%;
   opacity: 0.7;
 }
 .empty-message {
@@ -922,11 +927,12 @@ hr {
   margin: 90px;
   margin-top: 40px;
   text-transform: capitalize;
-  margin-left: 33%;
+  text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(81, 79, 79);
 }
 
-/* media query for cart */
+/* media query for empty cart */
 @media (max-width: 1250px) {
   .Action {
     font-size: 11px;
@@ -960,7 +966,7 @@ hr {
     font-size: 25px;
   }
 }
-@media (max-width: 780px) {
+@media (max-width: 910px) {
   .hheading {
     font-size: 20px;
     margin-top: -10px;
@@ -978,7 +984,93 @@ hr {
   }
   .empty-message {
     font-size: 20px;
+    margin-bottom: 150px;
   }
+}
+@media (max-width: 730px) {
+  .cart-section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 510px) {
+  .empty-message {
+    font-size: 18px;
+  }
+  .empty-img {
+    height: 80px;
+    margin-left: 35%;
+  }
+}
+
+/* media query for full cart */
+@media (max-width: 1230px) {
+  .image-box img {
+    height: 110px;
+    width: 180px;
+  }
+  .title {
+    font-size: 25px;
+    margin-left: 100px;
+  }
+  .subtitle {
+    font-size: 15px;
+    margin-left: 100px;
+  }
+  .trend {
+    padding-left: 28px;
+    font-size: 14px;
+  }
+  .amount {
+    font-size: 22px;
+  }
+  .save {
+    font-size: 11px;
+  }
+  .remove {
+    font-size: 11px;
+  }
+  .whole-checkout {
+    margin-top: 25px;
+  }
+  .Subtotal {
+    font-size: 18px;
+  }
+  .items {
+    font-size: 13px;
+  }
+  .total-amount {
+    font-size: 28px;
+  }
+  .button {
+    font-size: 15px;
+    width: 80%;
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 1125px) {
+  .image-box img {
+    height: 105px;
+    width: 172px;
+  }
+  .title {
+    font-size: 20px;
+    margin-left: 100px;
+    line-height: 18px;
+  }
+  .subtitle {
+    font-size: 12px;
+    margin-left: 100px;
+  }
+  .trend {
+    padding-left: 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width:895px){
+  
 }
 
 @media (max-width: 1250px) {
