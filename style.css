@@ -661,6 +661,19 @@ figure img:hover {
     font-size: 20px;
   }
 }
+@media (max-width: 450px) {
+  figure.snip1390 {
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  figure.snip1390 .profile {
+    width: 80px;
+  }
+  figure.snip1390 h2 {
+    font-size: 18px;
+  }
+}
 
 /*skill section*/
 .skill-section {
@@ -1755,7 +1768,7 @@ hr {
 @media (max-width: 630px) {
   .contact-section {
     grid-template-columns: repeat(1, 1fr);
-    margin-bottom: 150px;
+    margin-bottom: 90px;
   }
   #name,
   #email {
@@ -2112,7 +2125,11 @@ hr {
     line-height: 15px;
   }
   .skill-container {
-    grid-gap: 15px;
+    grid-gap: 0;
+    margin-left: -40px;
+  }
+  .skill-card {
+    margin-bottom: 20px;
   }
   .skill-img {
     height: 75px;
@@ -2125,6 +2142,11 @@ hr {
     width: 60px;
     height: 60px;
     border: 5px solid;
+  }
+  .contact-section {
+    margin-top: -50px;
+    margin-left: -20px;
+    margin-bottom: 50px;
   }
   .heading1 {
     font-size: 30px;
@@ -2149,5 +2171,8 @@ hr {
   }
 }
 
-@media (max-width: 400px) and (min-width: 360px) {
+@media (max-width: 400px) {
+  .contact-section {
+    margin-left: -40px;
+  }
 }
