@@ -104,8 +104,7 @@ function validcap() {
         .then((response) => response.json())
         .then((html) => {
           // you can put any JS code here
-          window.location.href =
-            "https://www.payumoney.com/paybypayumoney/#/AD743282918502F755C27A37FCB4766B";
+          window.location.href = "https://pmny.in/MIQpiOZrx9U4";
         });
     });
     return true;
