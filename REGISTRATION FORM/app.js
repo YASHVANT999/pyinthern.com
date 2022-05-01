@@ -92,7 +92,7 @@ function validcap() {
     document.querySelector(".success").classList.remove("hide");
     setTimeout(function () {
       document.querySelector(".success").classList.add("hide");
-    }, 2000);
+    }, 500);
     document.querySelector(".error").classList.add("hide");
     var form = document.getElementById("sheetdb-form");
     form.addEventListener("submit", (e) => {
