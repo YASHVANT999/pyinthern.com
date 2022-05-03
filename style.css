@@ -834,6 +834,10 @@ figure img:hover {
   color: #fff;
   font-size: 20px;
   opacity: 0.8;
+  cursor: pointer;
+}
+.about-section:hover {
+  color: rgb(189, 112, 189);
 }
 
 .about-info {
@@ -1248,8 +1252,55 @@ hr {
 }
 
 @media (max-width: 895px) {
+  .image-box img {
+    height: 92px;
+    width: 175px;
+  }
+  .title {
+    font-size: 16px;
+    margin-left: 120px;
+    line-height: 18px;
+  }
+  .subtitle {
+    font-size: 11px;
+    margin-left: 120px;
+  }
+  .trend {
+    display: none;
+  }
+  .amount {
+    font-size: 20px;
+  }
+  .save {
+    font-size: 10px;
+  }
+  .remove {
+    font-size: 10px;
+  }
+  .whole-checkout {
+    margin-top: 25px;
+  }
+  .Subtotal {
+    font-size: 15px;
+  }
+  .items {
+    font-size: 11px;
+  }
+  .total-amount {
+    font-size: 24px;
+  }
+  .button {
+    font-size: 12px;
+    width: 80%;
+    margin-left: 30px;
+  }
 }
 
+@media (max-width: 500px) {
+  .cart-section {
+    height: 500px;
+  }
+}
 @media (max-width: 1250px) {
   .home_left h2 {
     font-size: 3.7em;
