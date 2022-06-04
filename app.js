@@ -143,8 +143,8 @@ function add_to_cart_6() {
   document.querySelector(".cart1").innerHTML = "Add to cart";
   document.querySelector(".cart2").innerHTML = "Add to cart";
   document.querySelector(".cart3").innerHTML = "Add to cart";
+  document.querySelector(".cart4").innerHTML = "Add to cart";
   document.querySelector(".cart5").innerHTML = "Add to cart";
-  document.querySelector(".cart6").innerHTML = "Add to cart";
   document.querySelector(".cart-section").style.display = "block";
 }
 

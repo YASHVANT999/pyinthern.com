@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Page</title>
+    <style rel="stylesheet">
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      img {
+        height: 60px;
+        width: 60px;
+        margin-top: 150px;
+        animation: blink 1.5s infinite;
+      }
+      @keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    transform: scale(2);
+  }
+  51% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+      .confirm {
+        justify-content: center;
+        text-align: center;
+        margin: 42px;
+        font-size: 40px;
+        text-transform: capitalize;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: rgb(81, 171, 81);
+      }
+      .info {
+        text-align: center;
+        font-size: 20px;
+        font-family: "Fredoka", sans-serif;
+        color: lightslategrey;
+        opacity: 1;
+      }
+      button {
+          margin: 35px;
+          padding: 10px;
+          border-radius: 5px;
+          text-transform: uppercase;
+          font-weight: 700;
+          box-shadow: 2px 2.5px 5px rgb(106, 104, 104);
+      }
+      .desktop{
+          background-color: white;
+          border-color: rgb(233, 228, 228);
+          color: rgb(117, 126, 129);
+      }
+      .classroom{
+          background-color:rgb(46, 224, 147) ;
+          color: rgb(65, 68, 69);
+          opacity: .9;
+      }
+      @media (max-width:650px) {
+        img{
+          height: 50px;
+          width: 50px;
+          margin-top: 140px;
+        }
+        .confirm{
+          font-size: 35px;
+        }
+        .info{
+          font-size: 15px;
+        }
+        button{
+          padding: 8px;
+        }
+      }
+      @media (max-width:400px){
+        img{
+          height: 45px;
+          width: 45px;
+          margin-top: 100px;
+        }
+        .confirm{
+          font-size: 32px;
+        }
+        .info{
+          font-size: 13px;
+        }
+        button{
+          padding: 7px;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="check">
+        <center><img class="image" src="checked.png" /></center>
+      </div>
+      <div class="confirm">order successful</div>
+      <div class="info">
+        <p>Your order is confirmed. You will contact on whatsapp shortly.</p>
+        <p>For now join google classroom from the below button.</p>
+      </div><center>
+      <a href="https://yashvant999.github.io/pyinthern.com"><button class="desktop">
+        continue shopping
+      </button></a>
+      <a href="https://classroom.google.com/c/NDg0NDMzMzY1NjIz?cjc=rnxeevf"><button class="classroom">join google classroom</button></a>
+    </div></center>
+  </body>
+</html>

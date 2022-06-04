@@ -539,6 +539,14 @@ input[type="checkbox"] {
 }
 
 /* testinomials section */
+.heading {
+  text-align: center;
+  font-size: 60px;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 300;
+  margin-bottom: 70px;
+}
 .test-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -673,99 +681,6 @@ figure img:hover {
   figure.snip1390 h2 {
     font-size: 18px;
   }
-}
-
-/*skill section*/
-.skill-section {
-  position: relative;
-  margin: 1em 0;
-  margin-bottom: 10em;
-}
-
-.heading {
-  text-align: center;
-  font-size: 60px;
-  color: #fff;
-  text-transform: capitalize;
-  font-weight: 300;
-  margin-bottom: 70px;
-}
-
-.skill-container {
-  width: 95%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 100px;
-  color: #fff;
-}
-
-.skill-card {
-  position: relative;
-}
-
-.skill-img {
-  display: block;
-  margin: auto;
-  height: 200px;
-}
-
-.skill-name {
-  font-size: 30px;
-  font-weight: 300;
-  text-align: center;
-  margin: 30px 0 20px;
-}
-
-.skill-info {
-  text-align: center;
-  opacity: 0.5;
-  font-size: 18px;
-  line-height: 30px;
-}
-
-.skill-level {
-  position: absolute;
-  top: 80px;
-  right: 0;
-  width: 150px;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 22px;
-  border-radius: 50%;
-  border: 10px solid;
-}
-
-.skill-card:nth-child(1) .skill-level {
-  background: #ff4f4f28;
-  border-color: #ff4f4f;
-  color: #ff4f4f;
-}
-
-.skill-card:nth-child(2) .skill-level {
-  background: #4fa0ff28;
-  border-color: #4fa0ff;
-  color: #4fa0ff;
-}
-
-.skill-card:nth-child(3) .skill-level {
-  background: #ffed4f28;
-  border-color: #ffed4f;
-  color: #ffed4f;
-}
-
-.skill-card:nth-child(4) .skill-level {
-  background: #52ff4f28;
-  border-color: #52ff4f;
-  color: #52ff4f;
-}
-
-.skill-card:nth-child(5) .skill-level {
-  background: #4fdfff28;
-  border-color: #4fdfff;
-  color: #4fdfff;
 }
 
 /*contact*/
@@ -1296,11 +1211,50 @@ hr {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 540px) {
   .cart-section {
     height: 500px;
   }
+  .amount,
+  .remove,
+  .save {
+    display: none;
+  }
+  .title {
+    font-size: 20px;
+    margin-right: -50px;
+  }
+  .subtitle {
+    font-size: 14px;
+    margin-right: -50px;
+  }
 }
+@media (max-width: 415px) {
+  .title {
+    font-size: 16px;
+  }
+  .subtitle {
+    font-size: 12px;
+  }
+  .whole-checkout {
+    margin-top: 20px;
+  }
+  .Subtotal {
+    font-size: 13px;
+  }
+  .items {
+    font-size: 10px;
+  }
+  .total-amount {
+    font-size: 16px;
+  }
+  .button {
+    font-size: 12px;
+    width: 90%;
+    margin-left: 30px;
+  }
+}
+
 @media (max-width: 1250px) {
   .home_left h2 {
     font-size: 3.7em;
@@ -1347,9 +1301,6 @@ hr {
   .project-btn {
     font-size: 18px;
     border: 1.7px solid #fff;
-  }
-  .skill-section {
-    margin-top: 70px;
   }
 
   .contact-section,
@@ -1408,39 +1359,9 @@ hr {
     border: 1.5px solid #fff;
   }
 
-  .skill-section {
-    margin-top: -1em;
-  }
-
   .heading,
   .heading1 {
     font-size: 52px;
-  }
-
-  .skill-container {
-    width: 95%;
-    margin: auto;
-    grid-gap: 90px;
-  }
-
-  .skill-img {
-    height: 160px;
-  }
-
-  .skill-name {
-    font-size: 25px;
-  }
-
-  .skill-info {
-    font-size: 16.5px;
-    line-height: 20px;
-  }
-
-  .skill-level {
-    top: 57px;
-    width: 130px;
-    height: 130px;
-    font-size: 20px;
   }
 
   #name,
@@ -1527,35 +1448,12 @@ hr {
   .testimonials .heading {
     font-size: 52px;
   }
+  .testimonials {
+    margin-bottom: 4rem;
+  }
   .heading1,
   .contact-section {
     font-size: 42px;
-  }
-
-  .skill-container {
-    width: 90%;
-    margin: auto;
-    grid-gap: 75px;
-  }
-
-  .skill-img {
-    height: 140px;
-  }
-
-  .skill-name {
-    font-size: 21px;
-  }
-
-  .skill-info {
-    font-size: 14px;
-    line-height: 15px;
-  }
-
-  .skill-level {
-    top: 40px;
-    width: 110px;
-    height: 110px;
-    font-size: 18px;
   }
   .contact-section {
     margin-top: -1em;
@@ -1650,37 +1548,8 @@ hr {
     border: 1.3px solid #fff;
   }
 
-  .skill-section .heading {
-    font-size: 37px;
-  }
   .contact-section {
     font-size: 37px;
-  }
-
-  .skill-container {
-    width: 90%;
-    margin: auto;
-    grid-gap: 65px;
-  }
-
-  .skill-img {
-    height: 120px;
-  }
-
-  .skill-name {
-    font-size: 18px;
-  }
-
-  .skill-info {
-    font-size: 12px;
-    line-height: 13px;
-  }
-
-  .skill-level {
-    top: 35px;
-    width: 100px;
-    height: 100px;
-    font-size: 16px;
   }
   .contact-section {
     margin-top: -1em;
@@ -1767,31 +1636,6 @@ hr {
   .testimonials .heading {
     font-size: 45px;
   }
-  .skill-container {
-    width: 90%;
-    margin: auto;
-    grid-gap: 50px;
-  }
-
-  .skill-img {
-    height: 100px;
-  }
-
-  .skill-name {
-    font-size: 15px;
-  }
-
-  .skill-info {
-    font-size: 11px;
-    line-height: 11px;
-  }
-
-  .skill-level {
-    top: 32px;
-    width: 85px;
-    height: 85px;
-    font-size: 16px;
-  }
 
   #name,
   #email {
@@ -1877,32 +1721,6 @@ hr {
   .testimonials .heading {
     font-size: 40px;
   }
-  .skill-container {
-    width: 500px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 40px;
-  }
-
-  .skill-img {
-    height: 100px;
-  }
-
-  .skill-name {
-    font-size: 16px;
-  }
-
-  .skill-info {
-    font-size: 12px;
-    line-height: 11px;
-  }
-
-  .skill-level {
-    top: 32px;
-    width: 85px;
-    height: 85px;
-    font-size: 16px;
-    left: 120px;
-  }
   .heading1 {
     font-size: 40px;
     justify-items: center;
@@ -1963,30 +1781,7 @@ hr {
     height: 220px;
     width: 350px;
   }
-  .skill-container {
-    grid-gap: 32px;
-  }
 
-  .skill-img {
-    height: 85px;
-  }
-
-  .skill-name {
-    font-size: 14.5px;
-  }
-
-  .skill-info {
-    font-size: 11px;
-    line-height: 10px;
-  }
-
-  .skill-level {
-    top: 28px;
-    width: 75px;
-    height: 75px;
-    font-size: 14.5px;
-    border: 8px solid;
-  }
   .heading1 {
     font-size: 35px;
   }
@@ -2066,37 +1861,7 @@ hr {
   .testimonials .heading {
     font-size: 32.5px;
   }
-  .skill-section .heading {
-    font-size: 30px;
-    margin-top: 40px;
-  }
-  .skill-container {
-    width: 450px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 25px;
-  }
 
-  .skill-img {
-    height: 85px;
-  }
-
-  .skill-name {
-    font-size: 12px;
-  }
-
-  .skill-info {
-    font-size: 8px;
-    line-height: 8px;
-  }
-
-  .skill-level {
-    top: 28px;
-    width: 70px;
-    height: 70px;
-    font-size: 13px;
-    left: 110px;
-    border: 6px solid;
-  }
   .heading1 {
     font-size: 30px;
   }
@@ -2175,25 +1940,6 @@ hr {
   .project-info {
     line-height: 15px;
   }
-  .skill-container {
-    grid-gap: 0;
-    margin-left: -40px;
-  }
-  .skill-card {
-    margin-bottom: 20px;
-  }
-  .skill-img {
-    height: 75px;
-  }
-  .skill-info {
-    font-size: 7px;
-  }
-  .skill-level {
-    top: 25px;
-    width: 60px;
-    height: 60px;
-    border: 5px solid;
-  }
   .contact-section {
     margin-top: -50px;
     margin-left: -20px;
@@ -2224,6 +1970,6 @@ hr {
 
 @media (max-width: 400px) {
   .contact-section {
-    margin-left: -40px;
+    margin-left: -38px;
   }
 }
