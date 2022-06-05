@@ -1973,3 +1973,9 @@ hr {
     margin-left: -38px;
   }
 }
+
+@media (max-width: 370px) {
+  .project-container {
+    margin-left: -10px;
+  }
+}
