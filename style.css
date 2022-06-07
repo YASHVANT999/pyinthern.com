@@ -1979,3 +1979,77 @@ hr {
     margin-left: -10px;
   }
 }
+
+/* pop-up */
+.pop-up {
+  position: fixed;
+  background-color: #0072c6;
+  margin-top: 5%;
+  margin-left: 27.5%;
+  z-index: 9;
+}
+
+.pop-up img {
+  height: 80vh;
+  width: 80vh;
+}
+
+@media (max-width: 830px) {
+  .pop-up {
+    margin-left: 20%;
+    margin-top: 8%;
+  }
+}
+@media (max-width: 730px) {
+  .pop-up {
+    margin-left: 17%;
+    margin-top: 8%;
+  }
+}
+@media (max-width: 650px) {
+  .pop-up {
+    margin-left: 12%;
+    margin-top: 8%;
+  }
+}
+@media (max-width: 585px) {
+  .pop-up img {
+    width: 70vh;
+    height: 70vh;
+  }
+}
+
+@media (max-width: 545px) {
+  .pop-up img {
+    width: 60vh;
+  }
+}
+
+@media (max-width: 435px) {
+  .pop-up {
+    margin-top: 15%;
+    margin-left: 8%;
+  }
+  .pop-up img {
+    width: 60vh;
+  }
+}
+
+@media (max-width: 410px) {
+  .pop-up {
+    margin-top: 15%;
+    margin-left: 9%;
+  }
+  .pop-up img {
+    width: 55vh;
+  }
+}
+
+@media (max-width: 385px) {
+  .pop-up {
+    margin-left: 11%;
+  }
+  .pop-up img {
+    width: 51vh;
+  }
+}

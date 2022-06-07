@@ -222,3 +222,8 @@ form.addEventListener("submit", (e) => {
       }, 2010);
     });
 });
+
+// popup
+document.getElementById("pop-up").addEventListener("click", () => {
+  document.querySelector(".pop-up").style.display = "none";
+});
