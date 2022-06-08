@@ -1990,8 +1990,8 @@ hr {
 }
 
 .pop-up img {
-  height: 80vh;
-  width: 80vh;
+  height: 500px;
+  width: 500px;
 }
 
 @media (max-width: 830px) {
@@ -2008,20 +2008,23 @@ hr {
 }
 @media (max-width: 650px) {
   .pop-up {
-    margin-left: 12%;
+    margin-left: 11%;
     margin-top: 8%;
   }
 }
+
 @media (max-width: 585px) {
+  .pop-up {
+    margin-left: 9%;
+  }
   .pop-up img {
-    width: 70vh;
-    height: 70vh;
+    width: 460px;
   }
 }
 
 @media (max-width: 545px) {
   .pop-up img {
-    width: 60vh;
+    width: 410px;
   }
 }
 
