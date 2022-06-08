@@ -2037,8 +2037,8 @@ hr {
 
 @media (max-width: 410px) {
   .pop-up {
-    margin-top: 15%;
-    margin-left: 9%;
+    margin-top: 16%;
+    margin-left: 5%;
   }
   .pop-up img {
     width: 55vh;
@@ -2047,7 +2047,7 @@ hr {
 
 @media (max-width: 385px) {
   .pop-up {
-    margin-left: 11%;
+    margin-left: 5%;
   }
   .pop-up img {
     width: 51vh;
